@@ -1,0 +1,26 @@
+@import url(file:///C:/FirefoxChrome/addNewTab.css);
+@import url(file:///C:/FirefoxChrome/favicons.css);
+@import url(file:///C:/FirefoxChrome/multiTabRows.css);
+@import url(file:///C:/FirefoxChrome/sidebar.css);
+@import url(file:///C:/FirefoxChrome/slantTabs.css);
+@import url(file:///C:/FirefoxChrome/tabCloseLeft.css);
+
+/* For Running Scripts */
+toolbarbutton#alltabs-button {
+  -moz-binding: url(userChrome.xml#js);
+}
+
+/* Restart Button */
+#main-window:not(#f) #titlebar #restart-button .toolbarbutton-icon {
+  list-style-image: url(file:///C:/FirefoxChrome/restartDark.png) !important;
+}
+#main-window:not(#f) #titlebar #restart-button:hover .toolbarbutton-icon {
+  list-style-image: url(file:///C:/FirefoxChrome/restartLight.png) !important;
+}
+#main-window:not(#f) #titlebar #restart-button:-moz-lwtheme-brighttext .toolbarbutton-icon,
+#main-window:not(#f) #titlebar #restart-button:not(:-moz-lwtheme) .toolbarbutton-icon  {
+  list-style-image: url(file:///C:/FirefoxChrome/restartLight.png) !important;
+}
+#main-window:not(#f) #titlebar #restart-button:hover {
+  background: #0A84FF !important;
+}
